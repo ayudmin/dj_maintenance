@@ -1,5 +1,5 @@
 from django.urls import path
-from maintenance import views
+from django_maintenance import views
 
 app_name = 'maintenance'
 
