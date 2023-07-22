@@ -1,22 +1,31 @@
 =====
-Maintenance
+Django_maintenance
 =====
 
-Maintenance is a Django app to conduct sheduled maintenance.
+Django_maintenance is a Django app to conduct sheduled maintenance on your web application.
 Detailed documentation is in the "docs" directory.
 
 Quick start
 -----------
 
-1. Add "maintenance" to your INSTALLED_APPS setting like this::
+1. Add "django_maintenance" to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = [
         ...,
-        "maintenance",
+        "django_maintenance",
     ]
 
-2. Include the polls URLconf in your project urls.py like this::
+2. Add maintenance_mode variable to base or settings::
 
-    path("", include("maintenance.urls")),
+    MAINTENANCE_MODE = bool(os.getenv('MAINTENANCE_MODE'))
 
-3. Run ``python manage.py migrate`` to create the polls models.
+3. Update the URLconf in your project urls.py like this::
+
+    if base.MAINTENANCE_MODE:
+        path("", include("django_maintenance.urls")),
+    else:
+        # All project URLconf
+    # static URLconf
+    # others ..
+
+4. Run ``python manage.py migrate`` to create the polls models.
