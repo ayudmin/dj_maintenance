@@ -1,5 +1,5 @@
 include LICENSE
 #include README.rst
-recursive-include dj-maintenance/static *
-recursive-include dj-maintenance/templates *
+recursive-include dj_maintenance/static *
+recursive-include dj_maintenance/templates *
 recursive-include docs *

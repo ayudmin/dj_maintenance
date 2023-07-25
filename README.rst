@@ -1,5 +1,5 @@
 =====
-dj-maintenance
+dj_maintenance
 =====
 
 Django_maintenance is a Django app to conduct sheduled maintenance on your web application.
@@ -12,7 +12,7 @@ Quick start
 
     INSTALLED_APPS = [
         ...,
-        "dj-maintenance",
+        "dj_maintenance",
     ]
 
 2. Add maintenance_mode variable to base or settings::
@@ -22,7 +22,7 @@ Quick start
 3. Update the URLconf in your project urls.py like this::
 
     if base.MAINTENANCE_MODE:
-        path("", include("dj-maintenance.urls")),
+        path("", include("dj_maintenance.urls")),
     else:
         # All project URLconf
     # static URLconf
