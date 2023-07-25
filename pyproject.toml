@@ -1,3 +1,12 @@
 [build-system]
+
 requires = ['setuptools>=40.8.0']
 build-backend = 'setuptools.build_meta'
+
+[project]
+
+name = "dj_maintenance"
+version = "0.2.1"
+authors = [
+  { name="ayudmin", email="admin@ayumefrancis.com" },
+]

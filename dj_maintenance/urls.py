@@ -1,9 +1,9 @@
 from django.urls import path
 from django_maintenance import views
 
-app_name = 'dj-maintenance'
+app_name = 'dj_maintenance'
 
 urlpatterns = [
-    path('', views.index, name='dj-maintenance-index'),
+    path('', views.index, name='dj_maintenance-index'),
     path('<path:resource>', views.index),
 ]

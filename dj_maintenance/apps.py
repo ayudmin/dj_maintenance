@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class MaintenanceConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'dj-maintenance'
+    name = 'dj_maintenance'
