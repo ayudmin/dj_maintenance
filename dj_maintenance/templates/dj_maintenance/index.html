@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>sspaynow</title>
+    <title>{% if domain %}{{ domain }}{% else %} 503{% endif %} | Unavailable</title>
 </head>
 <style>
     html, body {
@@ -37,15 +37,20 @@
         font-size: 12px;
         font-weight: 600;
     }
+
+
+
 </style>
 <body>
-    <section class="alert">
-        <h1><underline>website Under maintenance</underline></h1>
-        <p>Our website is currently undergoing <span style="color: green;">sheduled maintenance</span></p>
-        <p>We should be back shortly. Thank you for your patience</p>
-        <img src="{% static 'dj-maintenance/images/maintenance.gif' %}" width="500"  alt="">
-        <h3>Application Id: DA-11542</h3>
-    </section>
+<section class="alert">
+    <h1>
+        <underline>website Under maintenance</underline>
+    </h1>
+    <p>Our website is currently undergoing <span style="color: green;">sheduled maintenance</span></p>
+    <p>We should be back shortly. Thank you for your patience</p>
+    <img src="{% static 'dj-maintenance/images/maintenance.gif' %}" width="500" alt="">
+    <h3>Application Id: DA-11542</h3>
+</section>
 
 </body>
 </html>
