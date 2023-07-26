@@ -1,4 +1,10 @@
 [build-system]
-
 requires = ['setuptools>=40.8.0']
 build-backend = 'setuptools.build_meta'
+
+[project]
+name = "dj_maintenance"
+
+[project.urls]
+"Homepage" = "https://djmaintenance.ayumefrancis.com"
+"Source Code" = "https://github.com/ayudmin/dj_maintenance"
