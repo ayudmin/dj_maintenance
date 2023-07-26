@@ -5,8 +5,20 @@ dj_maintenance
 Django_maintenance is a Django app to conduct sheduled maintenance on your web application.
 Detailed documentation is in the "docs" directory.
 
-Quick start
------------
+Installation
+--------------
+
+.. start installation
+
+``dj_maintenance`` can be installed from PyPI.
+
+To install with ``pip``:
+
+.. code-block:: bash
+
+	$ python -m pip install dj_maintenance
+
+.. end installation
 
 1. Add "django_maintenance" to your INSTALLED_APPS setting like this::
 
