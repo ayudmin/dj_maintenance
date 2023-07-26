@@ -4,6 +4,7 @@ build-backend = 'setuptools.build_meta'
 
 [project]
 name = "dj_maintenance"
+version = "0.2.6"
 
 [project.urls]
 "Homepage" = "https://djmaintenance.ayumefrancis.com"
